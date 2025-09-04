@@ -1,5 +1,79 @@
 * {
-    font-size: large;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, serif;
+}
+
+
+body {
+    background-color: #0a0f2c; 
+    color: #f5f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
     text-align: center;
-    margin: 0 auto;
+    padding: 25px;
+    background-color: #111b47; 
+    border-radius: 15px;
+    
+}
+
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #4169e1; 
+    margin-bottom: 15px;
+    object-fit: cover;
+   
+    
+}
+
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.emoji {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #6ca0ff; 
+    margin-bottom: 18px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #4169e1;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(65, 105, 225, 0.5);
+}
+
+.btn:hover {
+    background-color: #3154c7; 
+    transform: scale(1.05);
+}
+
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cfd8ff;
 }
