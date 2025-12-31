@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lujain Alsultan | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<title>Lujain Alsultan | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <img src="profile.jpeg" alt="Lujain's Profile" class="profile-pic" />
-    <h1>Lujain Alsultan <span class="emoji">👾</span></h1>
-    <h2>Software Engineer in Progress ..</h2>
-    <p>Welcome to my portfolio! I'm passionate about coding and technology.</p>
-    <p>Explore my projects:</p>
-        <footer></footer>
-    <a href="https://github.com/" target="_blank" class="btn">Visit my GitHub</a>
-    <footer>
-    </footer>
-  </div>
+<header class="top">
+<div class="brand">
+<h1>Lujain Alsultan</h1>
+<p>Software Developer</p>
+</div>
+<nav class="nav">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main class="page">
+<section class="hero">
+<p class="hero-tag">Full-stack Software Developer</p>
+<h2>Building clean and human-centered digital solutions</h2>
+<p class="hero-text">Full-stack software developer with a strong interest in building practical, user-centered digital platforms. I enjoy working across the stack — from designing clear backend logic and APIs, to creating simple and intuitive interfaces — with a focus on clean structure, clarity, and real-world usability.</p>
+<div class="hero-actions">
+<a href="#projects" class="btn">View Projects</a>
+<a href="https://github.com/lujainabdulmohsen" class="btn" target="_blank">GitHub</a>
+</div>
+</section>
+
+<section id="about" class="section">
+<h3>About Me</h3>
+<p>I’m a full-stack software developer with a detail-oriented, analytical mindset. I enjoy understanding how things work behind the scenes and turning ideas into clear, structured, and reliable digital products. A lot of my work focuses on real problems in digital services and everyday platforms, where I care about clean backend logic, well-designed APIs, and simple user flows that make complex services feel accessible and easy to use.</p>
+</section>
+
+<section id="skills" class="section">
+<h3>Skills</h3>
+<ul class="list">
+<li>Python · Django · Django REST Framework</li>
+<li>React · JavaScript</li>
+<li>PostgreSQL · SQL</li>
+<li>Git · GitHub</li>
+<li>Problem solving · Fast learning</li>
+</ul>
+</section>
+
+<section id="projects" class="section">
+<h3>Projects</h3>
+
+<div class="cards">
+<div class="card">
+<h4>Yusr – Unified Government Services Assistant</h4>
+<p>A digital platform that gathers multiple government services into one guided interface.</p>
+<p class="tech">React · Django REST · PostgreSQL · JWT</p>
+<a href="https://github.com/lujainabdulmohsen/yusr" target="_blank" class="link">View on GitHub</a>
+</div>
+
+<div class="card">
+<h4>Banking System – Python CLI</h4>
+<p>A console-based banking simulation for accounts and transactions.</p>
+<p class="tech">Python · OOP · CSV</p>
+<a href="https://github.com/lujainabdulmohsen/banking-system" target="_blank" class="link">View on GitHub</a>
+</div>
+
+<div class="card">
+<h4>Notes & Cat Collector Apps</h4>
+<p>Learning projects to practice CRUD operations and authentication.</p>
+<p class="tech">React · Django · REST APIs</p>
+<a href="https://github.com/lujainabdulmohsen" target="_blank" class="link">Repositories</a>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<h3>Contact</h3>
+<p>Email: <a href="mailto:lujainabdulmohsen@hotmail.com">lujainabdulmohsen@hotmail.com</a></p>
+<p>Phone: <a href="tel:0532146333">0532146333</a></p>
+<p>Location: Riyadh, Saudi Arabia</p>
+<div class="social">
+<a href="https://github.com/lujainabdulmohsen" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/lujainalsultan/" target="_blank">LinkedIn</a>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<p>© <span id="year"></span> Lujain Alsultan</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear()
+</script>
 </body>
 </html>
