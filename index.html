@@ -7,36 +7,49 @@
 <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+
 <header class="top">
-<div class="brand">
-<h1>Lujain Alsultan</h1>
-<p>Software Developer</p>
-</div>
+
 <nav class="nav">
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </nav>
+
+<div class="brand">
+<h1>Lujain Alsultan</h1>
+<p>Software Developer</p>
+</div>
+
+<button id="themeToggle" class="theme-toggle small-btn">Dark</button>
+
 </header>
 
 <main class="page">
-<section class="hero">
+
+<section class="hero reveal">
 <p class="hero-tag">Full-stack Software Developer</p>
-<h2>Building clean and human-centered digital solutions</h2>
-<p class="hero-text">Full-stack software developer with a strong interest in building practical, user-centered digital platforms. I enjoy working across the stack — from designing clear backend logic and APIs, to creating simple and intuitive interfaces — with a focus on clean structure, clarity, and real-world usability.</p>
+
+<p class="hero-text">
+Full-stack software developer with a strong interest in building practical, user-centered digital platforms. I enjoy working across the stack — from designing clear backend logic and APIs, to creating simple and intuitive interfaces — with a focus on clean structure, clarity, and real-world usability.
+</p>
+
 <div class="hero-actions">
 <a href="#projects" class="btn">View Projects</a>
+<a href="resume.pdf" target="_blank" class="btn">Resume</a>
 <a href="https://github.com/lujainabdulmohsen" class="btn" target="_blank">GitHub</a>
 </div>
 </section>
 
-<section id="about" class="section">
+<section id="about" class="section reveal">
 <h3>About Me</h3>
-<p>I’m a full-stack software developer with a detail-oriented, analytical mindset. I enjoy understanding how things work behind the scenes and turning ideas into clear, structured, and reliable digital products. A lot of my work focuses on real problems in digital services and everyday platforms, where I care about clean backend logic, well-designed APIs, and simple user flows that make complex services feel accessible and easy to use.</p>
+<p>
+I’m a full-stack software developer with a detail-oriented, analytical mindset. I enjoy understanding how things work behind the scenes and turning ideas into clear, structured, and reliable digital products. A lot of my work focuses on real problems in digital services and everyday platforms, where I care about clean backend logic, well-designed APIs, and simple user flows that make complex services feel accessible and easy to use.
+</p>
 </section>
 
-<section id="skills" class="section">
+<section id="skills" class="section reveal">
 <h3>Skills</h3>
 <ul class="list">
 <li>Python · Django · Django REST Framework</li>
@@ -47,51 +60,123 @@
 </ul>
 </section>
 
-<section id="projects" class="section">
+<section id="projects" class="section reveal">
 <h3>Projects</h3>
 
 <div class="cards">
+
+<!-- Yusr -->
 <div class="card">
+
+<p class="tech-tags">
+<span>Full-stack Platform</span>
+<span>API-Driven</span>
+<span>Service-oriented UX</span>
+</p>
+
 <h4>Yusr – Unified Government Services Assistant</h4>
-<p>A digital platform that gathers multiple government services into one guided interface.</p>
-<p class="tech">React · Django REST · PostgreSQL · JWT</p>
-<a href="https://github.com/lujainabdulmohsen/yusr" target="_blank" class="link">View on GitHub</a>
+
+<p>A capstone full-stack platform that centralizes multiple government services into a single guided assistant. I designed clear backend APIs, structured data flows, and simple user journeys so users can navigate complex services in a more intuitive way.</p>
+
+<p class="tech">Full-stack · React · Django REST · PostgreSQL · JWT</p>
+
+<a href="https://github.com/lujainabdulmohsen" target="_blank" class="link">
+Main GitHub Repository
+</a>
+
+<div class="card-links">
+<a href="https://github.com/lujainabdulmohsen/frontend-capstone" target="_blank" class="link">Frontend (React)</a>
+<a href="https://github.com/lujainabdulmohsen/backend-capstone" target="_blank" class="link">Backend (Django REST)</a>
 </div>
 
+<ul class="takeaways">
+<li>Structured backend APIs and clear request/response flows</li>
+<li>Designed guided service flows to simplify complex user actions</li>
+<li>Focused on data modeling and platform-style architecture</li>
+</ul>
+
+</div>
+
+<!-- Banking System -->
 <div class="card">
+
+<p class="tech-tags">
+<span>Backend Logic</span>
+<span>OOP Practice</span>
+<span>Data Handling</span>
+</p>
+
 <h4>Banking System – Python CLI</h4>
-<p>A console-based banking simulation for accounts and transactions.</p>
+
+<p>A console-based banking system where I implemented core account, transaction, and validation logic. The project focuses on practicing clean Python, OOP design, and data persistence using CSV to simulate real banking workflows.</p>
+
 <p class="tech">Python · OOP · CSV</p>
-<a href="https://github.com/lujainabdulmohsen/banking-system" target="_blank" class="link">View on GitHub</a>
+
+<a href="https://github.com/lujainabdulmohsen/python-bank-project" target="_blank" class="link">View on GitHub</a>
+
+<ul class="takeaways">
+<li>Implemented account & transaction validation rules</li>
+<li>Practiced clean OOP structure and modular logic</li>
+<li>Simulated real-world workflows using CSV persistence</li>
+</ul>
+
 </div>
 
+<!-- Notes App -->
 <div class="card">
-<h4>Notes & Cat Collector Apps</h4>
-<p>Learning projects to practice CRUD operations and authentication.</p>
+
+<p class="tech-tags">
+<span>CRUD App</span>
+<span>Full-stack Practice</span>
+<span>REST APIs</span>
+</p>
+
+<h4>Notes App</h4>
+
+<p>A notes application built to practice full-stack CRUD flows. I used React for the interface and Django REST APIs for the backend to handle creating, updating, and organizing notes in a structured and predictable way.</p>
+
 <p class="tech">React · Django · REST APIs</p>
-<a href="https://github.com/lujainabdulmohsen" target="_blank" class="link">Repositories</a>
+
+<a href="https://github.com/lujainabdulmohsen/notes-app.git" target="_blank" class="link">GitHub Repository</a>
+
+<ul class="takeaways">
+<li>Practiced CRUD operations with clear data structure</li>
+<li>Separated frontend state from backend API logic</li>
+<li>Focused on predictable and simple user flows</li>
+</ul>
+
 </div>
+
 </div>
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section reveal">
 <h3>Contact</h3>
-<p>Email: <a href="mailto:lujainabdulmohsen@hotmail.com">lujainabdulmohsen@hotmail.com</a></p>
-<p>Phone: <a href="tel:0532146333">0532146333</a></p>
+
+<p>Email:
+<a href="mailto:lujainabdulmohsen@hotmail.com">
+lujainabdulmohsen@hotmail.com
+</a></p>
+
+<p>Phone:
+<a href="tel:0532146333">0532146333</a></p>
+
 <p>Location: Riyadh, Saudi Arabia</p>
+
 <div class="social">
 <a href="https://github.com/lujainabdulmohsen" target="_blank">GitHub</a>
 <a href="https://www.linkedin.com/in/lujainalsultan/" target="_blank">LinkedIn</a>
 </div>
 </section>
+
 </main>
+
+<button id="scrollTop">↑</button>
 
 <footer class="footer">
 <p>© <span id="year"></span> Lujain Alsultan</p>
 </footer>
 
-<script>
-document.getElementById("year").textContent = new Date().getFullYear()
-</script>
+<script src="script.js"></script>
 </body>
 </html>
