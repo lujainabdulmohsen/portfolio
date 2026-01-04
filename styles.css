@@ -445,7 +445,7 @@ html[dir="rtl"] .footer {
 .tech-tags span:last-child::after {
   content: "";
 }
-/* Fix hero buttons layout on mobile */
+/* ترتيب أزرار الهيرو على الجوال */
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -457,14 +457,16 @@ html[dir="rtl"] .footer {
   margin: 0;
 }
 
-/* Better stacking on small screens */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .hero-actions {
+    flex-direction: column;
+    align-items: center;
     gap: 8px;
   }
 
   .hero-actions .btn {
-    width: 48%;
+    width: 100%;
+    max-width: 260px;
     text-align: center;
   }
 }
