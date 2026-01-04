@@ -1,18 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var htmlEl = document.documentElement;
+  var isArabic = htmlEl.lang === "ar";
+
   var savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     document.body.classList.add("dark");
   }
 
   var themeToggle = document.getElementById("themeToggle");
+
   function updateThemeToggleLabel() {
     if (!themeToggle) return;
+
+    var labelWhenDark = isArabic ? "وضع فاتح" : "Light";
+    var labelWhenLight = isArabic ? "وضع داكن" : "Dark";
+
     if (document.body.classList.contains("dark")) {
-      themeToggle.textContent = "Light";
+      themeToggle.textContent = labelWhenDark;
     } else {
-      themeToggle.textContent = "Dark";
+      themeToggle.textContent = labelWhenLight;
     }
   }
+
   updateThemeToggleLabel();
 
   if (themeToggle) {

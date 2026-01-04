@@ -396,3 +396,52 @@ body {
     margin-top: 8px;
   }
 }
+
+/* RTL support for Arabic page */
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] .section p,
+html[dir="rtl"] .list,
+html[dir="rtl"] .card p,
+html[dir="rtl"] .card h4 {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-text {
+  text-align: center;
+}
+
+html[dir="rtl"] .list {
+  padding-right: 18px;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .nav a {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .footer {
+  text-align: center;
+}
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.tech-tags span {
+  font-weight: 600;
+  color: var(--hero-tag);
+}
+
+.tech-tags span::after {
+  content: " - ";
+}
+
+.tech-tags span:last-child::after {
+  content: "";
+}
