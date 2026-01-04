@@ -445,3 +445,26 @@ html[dir="rtl"] .footer {
 .tech-tags span:last-child::after {
   content: "";
 }
+/* Fix hero buttons layout on mobile */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-actions .btn {
+  margin: 0;
+}
+
+/* Better stacking on small screens */
+@media (max-width: 480px) {
+  .hero-actions {
+    gap: 8px;
+  }
+
+  .hero-actions .btn {
+    width: 48%;
+    text-align: center;
+  }
+}
